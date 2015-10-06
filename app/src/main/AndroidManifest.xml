@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.henallux.androidproject" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".ConnectionActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GameMenuActivity"
+            android:label="@string/title_activity_game_menu" >
+        </activity>
+        <activity
+            android:name=".LevelGameActivity"
+            android:label="@string/title_activity_level_game" >
+        </activity>
+        <activity
+            android:name=".GameOptionActivity"
+            android:label="@string/title_activity_game_option" >
+        </activity>
+        <activity
+            android:name=".StatisticsActivity"
+            android:label="@string/title_activity_statistics" >
+        </activity>
+        <activity
+            android:name=".RankingsActivity"
+            android:label="@string/title_activity_rankings" >
+        </activity>
+        <activity
+            android:name=".InscriptionActivity"
+            android:label="@string/title_activity_inscription" >
+        </activity>
+        <activity
+            android:name=".GameActivity"
+            android:label="@string/title_activity_game" >
+        </activity>
+        <activity
+            android:name=".PasswordForgottenActivity"
+            android:label="@string/title_activity_password_forgotten" >
+        </activity>
+    </application>
+
+</manifest>
