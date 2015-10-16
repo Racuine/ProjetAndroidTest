@@ -55,13 +55,20 @@ public class LevelGameActivity extends AppCompatActivity implements View.OnClick
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+       switch(item.getItemId()){
+           case R.id.itemRankingsTitle:
+               startActivity(new Intent(LevelGameActivity.this, RankingsActivity.class));
+               return true;
+           case R.id.itemOptionsID:
+               startActivity(new Intent(LevelGameActivity.this, GameOptionActivity.class));
+               return true;
+           case R.id.itemEvolutionTitle:
+               startActivity(new Intent(LevelGameActivity.this, StatisticsActivity.class));
+               return true;
+           default:
+               return super.onOptionsItemSelected(item);
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+       }
 
-        return super.onOptionsItemSelected(item);
     }
 }

@@ -1,5 +1,6 @@
 package com.henallux.androidproject;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -25,13 +26,19 @@ public class StatisticsActivity extends AppCompatActivity {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        switch(item.getItemId()){
+            case R.id.itemPlayTitle:
+                startActivity(new Intent(StatisticsActivity.this, LevelGameActivity.class));
+                return true;
+            case R.id.itemOptionsID:
+                startActivity(new Intent(StatisticsActivity.this, GameOptionActivity.class));
+                return true;
+            case R.id.itemRankingsTitle:
+                startActivity(new Intent(StatisticsActivity.this, RankingsActivity.class));
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
         }
-
-        return super.onOptionsItemSelected(item);
     }
 }

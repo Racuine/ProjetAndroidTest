@@ -83,7 +83,7 @@
             android:layout_gravity="center_horizontal">
 
             <Spinner
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="25dp"
                 android:id="@+id/spinnerNationality"
                 android:spinnerMode="dialog" />
@@ -96,7 +96,7 @@
             android:layout_height="27dp">
 
             <Spinner
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="25dp"
                 android:id="@+id/spinnerLocalité"
                 android:spinnerMode="dialog"

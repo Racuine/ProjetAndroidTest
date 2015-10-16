@@ -17,11 +17,6 @@ public class GameMenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_menu);
-        play = (TextView)findViewById(R.id.viewMenuPlay);
-        options =(TextView)findViewById(R.id.viewMenuOptions);
-        statistics = (TextView)findViewById(R.id.viewMenuStatistics);
-        rankings = (TextView)findViewById(R.id.viewMenuRankings);
-        sound1 = MediaPlayer.create (this , R.raw.bbc_opening);
 
         play.setOnClickListener(new View.OnClickListener() {
             @Override

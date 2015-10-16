@@ -27,7 +27,7 @@ public class ConnectionActivity extends AppCompatActivity {
         buttonConnection.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ConnectionActivity.this, GameMenuActivity.class));
+                startActivity(new Intent(ConnectionActivity.this, LevelGameActivity.class));
 
             }
         });

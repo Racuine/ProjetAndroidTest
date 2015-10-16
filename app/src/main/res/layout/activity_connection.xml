@@ -3,7 +3,8 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".ConnectionActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".ConnectionActivity"
+    android:background="#d6c50700">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -21,7 +22,8 @@
             android:textSize="25sp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:textColor="#010101" />
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:orientation="vertical"
@@ -40,7 +42,9 @@
                 android:inputType="textPersonName"
                 android:ems="10"
                 android:id="@+id/nickname"
-                android:hint="@string/nickname" />
+                android:hint="@string/nickname"
+                android:textColor="#ffffff"
+                android:textColorHint="#b8b8b8" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -48,18 +52,14 @@
                 android:inputType="textPassword"
                 android:ems="10"
                 android:id="@+id/password"
-                android:hint="@string/pw" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="38dp"
-                android:id="@+id/textView"
-                android:layout_gravity="center_horizontal" />
+                android:hint="@string/pw"
+                android:textColorHint="#b8b8b8"
+                android:textColor="#ffffff" />
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="247dp"
-                android:layout_height="33dp"
+                android:layout_height="wrap_content"
                 android:gravity="center_horizontal">
 
                 <Button
@@ -76,8 +76,13 @@
                     android:layout_height="wrap_content"
                     android:text="@string/logOn"
                     android:id="@+id/buttonConnection" />
-
             </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:id="@+id/textView"
+                android:layout_gravity="center_horizontal" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -86,8 +91,9 @@
                 android:text="@string/pwForgotten"
                 android:id="@+id/pwForgotten"
                 android:layout_gravity="center_horizontal"
-                android:textColor="#0000ff"
-                android:textSize="20sp" />
+                android:textColor="#00d5dc"
+                android:textSize="20sp"
+                android:textColorHighlight="#ffffff" />
 
         </LinearLayout>
 

@@ -7,22 +7,4 @@
     tools:context="com.henallux.androidproject.GameActivity"
     android:id="@+id/ecran">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/barre"
-        android:layout_gravity="center_horizontal|bottom"
-        android:background="@drawable/barre"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/balle"
-        android:layout_gravity="center_horizontal|bottom"
-        android:background="@drawable/balle"
-        android:layout_above="@+id/barre"
-        android:layout_centerHorizontal="true" />
-
 </RelativeLayout>

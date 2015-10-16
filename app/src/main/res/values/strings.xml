@@ -21,17 +21,18 @@
     <string name="nickname">Nickname</string>
     <string name="pw">Password</string>
     <string name="confirmPw">Confirmer password</string>
-    <string name="menuPlay">➤Play</string>
-    <string name="menuOption">➤Options</string>
-    <string name="menuStatistics">➤Statistiques</string>
-    <string name="menuRankings">➤Classements</string>
+    <string name="menuPlay">>Play</string>
+    <string name="menuOption">>Options</string>
+    <string name="menuStatistics">>Statistiques</string>
+    <string name="menuRankings">>Classements</string>
     <string name="titleOption">Options</string>
     <string name="optionMusic">Musique</string>
     <string name="optionSound">Son</string>
     <string name="resetData">Supprimer mes données</string>
+    <string name="deconnection">Se déconnecter</string>
     <string name="titleLevel">Choix du niveau</string>
     <string name="titleRankings">Classements</string>
-    <string name="textNewPlayer">New player</string>
+    <string name="textNewPlayer">Nouveau Joueur</string>
     <string name="labelSexe">Sexe</string>
     <string name="labelNationality">Nationalité</string>
     <string name="labelLocalite">Localtié</string>
@@ -44,6 +45,10 @@
     <string name="pwForgottenNicknameText">Pseudo ou email</string>
     <string name="sendPasswordRecoveryRequest">Envoyer</string>
     <string name="titlePasswordRequest">Mot de passe oublié</string>
+    <string name="playTitle">Jouer</string>
+    <string name="optionTitle">Options</string>
+    <string name="rankingsTitle">Classements</string>
+    <string name="evolutionTitle">Progression</string>
 
 
 
