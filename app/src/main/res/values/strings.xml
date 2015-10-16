@@ -31,9 +31,10 @@
     <string name="resetData">Supprimer mes données</string>
     <string name="titleLevel">Choix du niveau</string>
     <string name="titleRankings">Classements</string>
-    <string name="textNewPlayer">Nouveau joueur</string>
+    <string name="textNewPlayer">New player</string>
     <string name="labelSexe">Sexe</string>
     <string name="labelNationality">Nationalité</string>
+    <string name="labelLocalite">Localtié</string>
     <string name="mailAdress">Adresse e-mail</string>
     <string name="validate">Valider</string>
     <string name="rankingWorld">Monde</string>
@@ -43,6 +44,7 @@
     <string name="pwForgottenNicknameText">Pseudo ou email</string>
     <string name="sendPasswordRecoveryRequest">Envoyer</string>
     <string name="titlePasswordRequest">Mot de passe oublié</string>
+
 
 
 

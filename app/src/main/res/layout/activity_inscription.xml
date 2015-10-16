@@ -82,19 +82,25 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="@string/labelNationality"
-                android:id="@+id/labelNationaliteInscription" />
-
             <Spinner
                 android:layout_width="wrap_content"
                 android:layout_height="25dp"
                 android:id="@+id/spinnerNationality"
                 android:spinnerMode="dialog" />
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="27dp">
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:id="@+id/spinnerLocalité"
+                android:spinnerMode="dialog"
+                android:layout_weight="1" />
         </LinearLayout>
 
         <EditText
