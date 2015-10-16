@@ -1,6 +1,7 @@
 package com.henallux.androidproject;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 
 public class GameMenuActivity extends AppCompatActivity {
 
+    private MediaPlayer sound1;
     private TextView play, options, statistics, rankings;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +21,7 @@ public class GameMenuActivity extends AppCompatActivity {
         options =(TextView)findViewById(R.id.viewMenuOptions);
         statistics = (TextView)findViewById(R.id.viewMenuStatistics);
         rankings = (TextView)findViewById(R.id.viewMenuRankings);
+        sound1 = MediaPlayer.create (this , R.raw.bbc_opening);
 
         play.setOnClickListener(new View.OnClickListener() {
             @Override
