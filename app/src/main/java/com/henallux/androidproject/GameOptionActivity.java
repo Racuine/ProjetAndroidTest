@@ -17,8 +17,8 @@ public class GameOptionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_option);
-        switchMusic = (Switch)findViewById(R.id.switchMusic);
-        switchSound = (Switch)findViewById(R.id.switchSound);
+        //switchMusic = (Switch)findViewById(R.id.switchMusic);
+        //switchSound = (Switch)findViewById(R.id.switchSound);
         deleteData = (TextView)findViewById(R.id.textDeleteData);
 
         deleteData.setOnClickListener(new View.OnClickListener() {

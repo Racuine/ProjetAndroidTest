@@ -36,11 +36,10 @@
         android:ems="10"
         android:id="@+id/nickname"
         android:hint="@string/nickname"
-        android:layout_marginTop="37dp"
-        android:layout_below="@+id/labelConnection"
-        android:layout_centerHorizontal="true"
         android:textColorHint="#b8b8b8"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:layout_below="@+id/labelConnection"
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="wrap_content"

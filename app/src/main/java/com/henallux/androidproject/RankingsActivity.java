@@ -5,15 +5,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import java.util.logging.Level;
 
 public class RankingsActivity extends AppCompatActivity {
 
+    private String[] players = {"Jean","Charles","Christophe","Marine","Jacque","Julien","Abdel","Arnaud","Antoine","Kevin","Zakaria","Francois","Axel","Alex","Maxence","Legende","Jerome","Jeremy","Olivier"};
+    private ListView listPlayers;
+    private ArrayAdapter arrayAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rankings);
+        listPlayers = (ListView)findViewById(R.id.listView);
+        arrayAdapter= new ArrayAdapter(RankingsActivity.this, android.R.layout.simple_list_item_1, players);
+        listPlayers.setAdapter(arrayAdapter);
     }
 
     @Override

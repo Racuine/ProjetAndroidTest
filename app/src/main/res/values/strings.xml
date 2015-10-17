@@ -28,6 +28,8 @@
     <string name="titleOption">Options</string>
     <string name="optionMusic">Musique</string>
     <string name="optionSound">Son</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
     <string name="resetData">Supprimer mes données</string>
     <string name="deconnection">Se déconnecter</string>
     <string name="titleLevel">Choix du niveau</string>
@@ -49,6 +51,7 @@
     <string name="optionTitle">Options</string>
     <string name="rankingsTitle">Classements</string>
     <string name="evolutionTitle">Progression</string>
+    <string name="title_activity_game_option_actvity">GameOptionActvity</string>
 
 
 

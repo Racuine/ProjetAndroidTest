@@ -14,7 +14,7 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-                <!--Start the connection activity-->
+                <!-- Start the connection activity -->
             </intent-filter>
         </activity>
         <activity
@@ -23,19 +23,23 @@
         </activity>
         <activity
             android:name=".LevelGameActivity"
-            android:label="@string/title_activity_level_game" >
+            android:label="@string/title_activity_level_game"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".GameOptionActivity"
-            android:label="@string/title_activity_game_option" >
+            android:label="@string/title_activity_game_option"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".StatisticsActivity"
-            android:label="@string/title_activity_statistics" >
+            android:label="@string/title_activity_statistics"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".RankingsActivity"
-            android:label="@string/title_activity_rankings" >
+            android:label="@string/title_activity_rankings"
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".InscriptionActivity"
@@ -43,7 +47,8 @@
         </activity>
         <activity
             android:name=".GameActivity"
-            android:label="@string/title_activity_game" >
+            android:label="@string/title_activity_game"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".PasswordForgottenActivity"

@@ -3,21 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.henallux.androidproject.GameOptionActivity">
 
-
     <item
         android:id ="@+id/itemPlayTitle"
         android:icon="@drawable/play"
         android:title="@string/playTitle"
         app:showAsAction="always"/>
     <item
-        android:id ="@+id/itemRankingsTitle"
-        android:icon="@drawable/rankings"
-        android:title="@string/playTitle"
-        app:showAsAction="always"/>
-    <item
         android:id ="@+id/itemEvolutionTitle"
         android:icon="@drawable/evolution"
         android:title="@string/evolutionTitle"
+        app:showAsAction="always"/>
+    <item
+        android:id ="@+id/itemRankingsTitle"
+        android:icon="@drawable/rankings"
+        android:title="@string/rankingsTitle"
         app:showAsAction="always"/>
 
 

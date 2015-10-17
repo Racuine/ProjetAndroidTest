@@ -7,4 +7,11 @@
     tools:context="com.henallux.androidproject.RankingsActivity"
     android:background="#d6c50700">
 
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:smoothScrollbar="true" />
 </RelativeLayout>

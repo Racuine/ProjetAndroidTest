@@ -6,7 +6,7 @@
     <item
         android:id ="@+id/itemRankingsTitle"
         android:icon="@drawable/rankings"
-        android:title="@string/playTitle"
+        android:title="@string/rankingsTitle"
         app:showAsAction="always"/>
     <item
         android:id ="@+id/itemOptionsID"

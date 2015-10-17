@@ -1,17 +1,23 @@
 package com.henallux.androidproject;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
+
 import com.henallux.androidproject.Java.View.CreatorLevel;
+
+import java.util.logging.Level;
 
 public class GameActivity extends AppCompatActivity{
 
     private int lvlNumber;
     private static DisplayMetrics metrics;
     private CreatorLevel creatorLevel;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +49,10 @@ public class GameActivity extends AppCompatActivity{
 
         setContentView(creatorLevel);
 
+
+        if(creatorLevel.getFinishedGame()){
+            startActivity(new Intent(GameActivity.this, LevelGameActivity.class));
+        }
     }
 
     @Override
