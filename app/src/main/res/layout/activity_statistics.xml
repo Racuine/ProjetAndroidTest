@@ -7,4 +7,98 @@
     tools:context="com.henallux.androidproject.StatisticsActivity"
     android:background="#d6c50700">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/labelBestScoreStat"
+        android:id="@+id/labelBestScoreStat"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/valueBestScore"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#c8f4e200" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/labelLevelBestScoreStat"
+        android:id="@+id/labelLevelBestScoreStat"
+        android:layout_below="@+id/labelBestScoreStat"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/valueLevelBestScore"
+        android:layout_below="@+id/valueBestScore"
+        android:layout_alignLeft="@+id/valueBestScore"
+        android:layout_alignStart="@+id/valueBestScore"
+        android:textColor="#c8f4e200" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/labelXPStat"
+        android:id="@+id/labelXPStat"
+        android:layout_below="@+id/labelLevelBestScoreStat"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/valueXP"
+        android:layout_below="@+id/valueLevelBestScore"
+        android:layout_alignLeft="@+id/valueLevelBestScore"
+        android:layout_alignStart="@+id/valueLevelBestScore"
+        android:textColor="#c8f4e200" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewScoresForLevelChoosen"
+        android:layout_below="@+id/spinnerDifficultyLevel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/difficultyLevelStat"
+        android:id="@+id/difficultyLevelStat"
+        android:paddingTop="0dp"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/spinnerDifficultyLevel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/spinnerDifficultyLevel"
+        android:layout_below="@+id/valueXP"
+        android:layout_alignLeft="@+id/valueXP"
+        android:layout_alignStart="@+id/valueXP" />
+
 </RelativeLayout>

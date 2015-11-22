@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.henallux.androidproject.GameStatisticsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/titleLevelStat"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#b9c78c00" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/labelBonusLevelStats"
+        android:id="@+id/labelBonusLevelStats"
+        android:layout_below="@+id/valuePointsLevelStats"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/labelPointsLevelStats"
+        android:id="@+id/labelPointsLevelStats"
+        android:layout_below="@+id/titleLevelStat"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="70dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/labelTotalLevelStats"
+        android:id="@+id/labelTotalLevelStats"
+        android:layout_below="@+id/valueBonusLevelStats"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/valueBonusLevelStats"
+        android:textColor="#c41dc100"
+        android:layout_below="@+id/labelBonusLevelStats"
+        android:layout_alignLeft="@+id/valuePointsLevelStats"
+        android:layout_alignStart="@+id/valuePointsLevelStats" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/valueTotalLevelStats"
+        android:textColor="#c41dc100"
+        android:layout_below="@+id/labelTotalLevelStats"
+        android:layout_alignLeft="@+id/valueBonusLevelStats"
+        android:layout_alignStart="@+id/valueBonusLevelStats"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/returnToLevel"
+        android:id="@+id/buttonReturnToLevel"
+        android:layout_below="@+id/valueTotalLevelStats"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/valuePointsLevelStats"
+        android:textColor="#c41dc100"
+        android:layout_below="@+id/labelPointsLevelStats"
+        android:layout_toRightOf="@+id/labelPointsLevelStats"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

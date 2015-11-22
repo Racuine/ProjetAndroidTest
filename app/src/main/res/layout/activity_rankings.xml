@@ -7,11 +7,95 @@
     tools:context="com.henallux.androidproject.RankingsActivity"
     android:background="#d6c50700">
 
-    <ListView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/listView"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:smoothScrollbar="true" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/titleRankings"
+        android:id="@+id/idTitleRanking"
+        android:textColor="#ffffff"
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker"
+        android:layout_below="@+id/idTitleRanking"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/validate"
+        android:id="@+id/buttonValidate"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/datePicker"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="139dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignTop="@+id/buttonValidate">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/labelLocalitéRankings"
+                android:id="@+id/labelLocaliteRankings"
+                android:paddingTop="5dp"
+                android:textColor="#ffffff" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/spinnerLocaliteClassements"
+                android:layout_gravity="center_horizontal"
+                android:layout_above="@+id/spinnerNiveauxClassements"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.30">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/labelLevelRankings"
+                android:id="@+id/labelLevelRankings"
+                android:paddingTop="5dp"
+                android:textColor="#ffffff" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/spinnerNiveauxClassements"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 </RelativeLayout>

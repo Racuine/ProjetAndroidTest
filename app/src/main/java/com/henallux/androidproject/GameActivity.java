@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -45,14 +46,46 @@ public class GameActivity extends AppCompatActivity{
                 creatorLevel = new CreatorLevel(GameActivity.this,3, metrics);
                 break;
             }
+            case 4:{
+                // levl 3 code
+                creatorLevel = new CreatorLevel(GameActivity.this,4, metrics);
+                break;
+            }
+            case 5:{
+                // levl 3 code
+                creatorLevel = new CreatorLevel(GameActivity.this,5, metrics);
+                break;
+            }
+            case 6:{
+                // levl 3 code
+                creatorLevel = new CreatorLevel(GameActivity.this,6, metrics);
+                break;
+            }
+            case 7:{
+                // levl 3 code
+                creatorLevel = new CreatorLevel(GameActivity.this,7, metrics);
+                break;
+            }
+            case 8:{
+                // levl 3 code
+                creatorLevel = new CreatorLevel(GameActivity.this,8, metrics);
+                break;
+            }
+            case 9:{
+                // levl 3 code
+                creatorLevel = new CreatorLevel(GameActivity.this,9, metrics);
+                break;
+            }
+            case 10:{
+                // levl 3 code
+                creatorLevel = new CreatorLevel(GameActivity.this,10, metrics);
+                break;
+            }
+
+
         }
 
         setContentView(creatorLevel);
-
-
-        if(creatorLevel.getFinishedGame()){
-            startActivity(new Intent(GameActivity.this, LevelGameActivity.class));
-        }
     }
 
     @Override
@@ -67,14 +100,14 @@ public class GameActivity extends AppCompatActivity{
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        switch(item.getItemId()){
+            case R.id.itemOptionsID:
+                startActivity(new Intent(GameActivity.this, GameOptionActivity.class));
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
         }
-
-        return super.onOptionsItemSelected(item);
     }
 
 }

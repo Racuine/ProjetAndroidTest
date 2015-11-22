@@ -8,6 +8,8 @@
     <string name="title_activity_rankings">RankingsActivity</string>
     <string name="title_activity_inscription">InscriptionActivity</string>
     <string name="title_activity_game">GameActivity</string>
+    <string name="title_activity_game_option_actvity">GameOptionActvity</string>
+    <string name="title_activity_game_statistics">GameStatisticsActivity</string>
 
     <string name="level_1_description">lvl1</string>
     <string name="level_2_description">lvl2</string>
@@ -51,9 +53,23 @@
     <string name="optionTitle">Options</string>
     <string name="rankingsTitle">Classements</string>
     <string name="evolutionTitle">Progression</string>
-    <string name="title_activity_game_option_actvity">GameOptionActvity</string>
+    <string name="returnToLevel">Retour au choix du level</string>
+    <string name="labelPointsLevelStats">Points pour le level: </string>
+    <string name="labelBonusLevelStats">Bonus temps: </string>
+    <string name="labelTotalLevelStats">Score total: </string>
+    <string name="defaultDate">22/10/2015</string>
+    <string name="changeDate">Change date</string>
+    <string name="backButton">Retour</string>
+    <string name="labelLocalitéRankings">Localité</string>
+    <string name="labelLevelRankings">Niveau</string>
+    <string name="labelBestScoreStat">Meilleur score: </string>
+    <string name="labelLevelBestScoreStat">Niveau: </string>
+    <string name="labelXPStat">Expérience: </string>
+    <string name="difficultyLevelStat">Niveau difficulté </string>
+    <string name="facebook_app_id">1073791082651684</string>
 
-
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_facebook">FacebookActivity</string>
 
 
 </resources>

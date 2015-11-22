@@ -5,23 +5,52 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Spinner;
 
-import java.util.logging.Level;
+import com.henallux.androidproject.Java.View.ListClassement;
 
 public class RankingsActivity extends AppCompatActivity {
-
-    private String[] players = {"Jean","Charles","Christophe","Marine","Jacque","Julien","Abdel","Arnaud","Antoine","Kevin","Zakaria","Francois","Axel","Alex","Maxence","Legende","Jerome","Jeremy","Olivier"};
-    private ListView listPlayers;
     private ArrayAdapter arrayAdapter;
+    private String[] arrayDate, arrayLocalite;
+    private Integer[] arrayNiveau;
+    private Spinner spinnerDate, spinnerLocalite,spinnerNiveau;
+    private Button buttonValidate;
+    private android.support.v4.app.FragmentManager fm;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rankings);
-        listPlayers = (ListView)findViewById(R.id.listView);
-        arrayAdapter= new ArrayAdapter(RankingsActivity.this, android.R.layout.simple_list_item_1, players);
-        listPlayers.setAdapter(arrayAdapter);
+
+        fm = getSupportFragmentManager();
+
+        spinnerLocalite = (Spinner) findViewById(R.id.spinnerLocaliteClassements);
+        spinnerNiveau = (Spinner) findViewById(R.id.spinnerNiveauxClassements);
+        buttonValidate = (Button) findViewById(R.id.buttonValidate);
+        buttonValidate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ListClassement l = new ListClassement();
+                l.show(fm,"Classements");
+            }
+        });
+
+        //********* TEST *********\\
+        arrayLocalite = new String[]{"Namur", "Charleroi", "Mons", "Bruxelles"};
+        arrayNiveau = new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9};
+
+        ArrayAdapter<String> adapterLocalite = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, arrayLocalite);
+        spinnerLocalite.setAdapter(adapterLocalite);
+        ArrayAdapter<Integer> adapterNiveau = new ArrayAdapter<Integer>(this,
+                android.R.layout.simple_list_item_1, arrayNiveau);
+        spinnerNiveau.setAdapter(adapterNiveau);
+
+
+
     }
 
     @Override

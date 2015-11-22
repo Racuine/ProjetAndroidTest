@@ -25,77 +25,25 @@
             android:textColor="#ffffff"
             android:textStyle="bold" />
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignRight="@+id/labelConnection"
-            android:layout_alignEnd="@+id/labelConnection"
-            android:layout_alignLeft="@+id/labelConnection"
-            android:layout_alignStart="@+id/labelConnection"
+        <com.facebook.login.widget.LoginButton
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logOn"
+            android:id="@+id/buttonConnection"
+            android:layout_marginTop="53dp"
             android:layout_below="@+id/labelConnection"
-            android:weightSum="1">
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:ems="10"
-                android:id="@+id/nickname"
-                android:hint="@string/nickname"
-                android:textColor="#ffffff"
-                android:textColorHint="#b8b8b8" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:ems="10"
-                android:id="@+id/password"
-                android:hint="@string/pw"
-                android:textColorHint="#b8b8b8"
-                android:textColor="#ffffff" />
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="247dp"
-                android:layout_height="wrap_content"
-                android:gravity="center_horizontal">
-
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/newNickname"
-                    android:id="@+id/buttonInscription"
-                    android:paddingLeft="20dp" />
-
-                <Button
-                    style="?android:attr/buttonStyleSmall"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/logOn"
-                    android:id="@+id/buttonConnection" />
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="38dp"
-                android:id="@+id/textView"
-                android:layout_gravity="center_horizontal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="@string/pwForgotten"
-                android:id="@+id/pwForgotten"
-                android:layout_gravity="center_horizontal"
-                android:textColor="#00d5dc"
-                android:textSize="20sp"
-                android:textColorHighlight="#ffffff" />
-
-        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textInfoConnection"
+            android:layout_below="@+id/buttonConnection"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="71dp" />
 
     </RelativeLayout>
 

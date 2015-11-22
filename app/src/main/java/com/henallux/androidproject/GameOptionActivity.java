@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class GameOptionActivity extends AppCompatActivity {
 
     private Switch switchMusic, switchSound;
-    private TextView deleteData;
+    private TextView deleteData, disconnect;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +20,14 @@ public class GameOptionActivity extends AppCompatActivity {
         //switchMusic = (Switch)findViewById(R.id.switchMusic);
         //switchSound = (Switch)findViewById(R.id.switchSound);
         deleteData = (TextView)findViewById(R.id.textDeleteData);
+        disconnect = (TextView)findViewById(R.id.textDisconnect);
+
+        disconnect.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
 
         deleteData.setOnClickListener(new View.OnClickListener() {
             @Override

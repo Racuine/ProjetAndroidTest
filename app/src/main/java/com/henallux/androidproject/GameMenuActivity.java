@@ -19,28 +19,28 @@ public class GameMenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_game_menu);
 
         play.setOnClickListener(new View.OnClickListener() {
-            @Override
+
             public void onClick(View v) {
                 Intent goToGame = new Intent(GameMenuActivity.this, LevelGameActivity.class);
                 startActivity(goToGame);
             }
         });
         options.setOnClickListener(new View.OnClickListener() {
-            @Override
+
             public void onClick(View v) {
                 Intent goToOption = new Intent(GameMenuActivity.this, GameOptionActivity.class);
                 startActivity(goToOption);
             }
         });
         statistics.setOnClickListener(new View.OnClickListener() {
-            @Override
+
             public void onClick(View v) {
                 Intent goToStatistics = new Intent(GameMenuActivity.this, StatisticsActivity.class);
                 startActivity(goToStatistics);
             }
         });
         rankings.setOnClickListener(new View.OnClickListener() {
-            @Override
+
             public void onClick(View v) {
                 Intent goToRankings = new Intent(GameMenuActivity.this, RankingsActivity.class);
                 startActivity(goToRankings);

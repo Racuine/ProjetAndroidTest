@@ -5,13 +5,22 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Spinner;
 
 public class StatisticsActivity extends AppCompatActivity {
 
+    private String[] arrayScores = {"Zak 1352 pts","Zak 1350 pts","Zak 587 pts"};
+    private ListView listScores;
+    private ArrayAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_statistics);
+        listScores = (ListView)findViewById(R.id.listViewScoresForLevelChoosen);
+        adapter= new ArrayAdapter<String>(StatisticsActivity.this, android.R.layout.simple_list_item_1, arrayScores);
+        listScores.setAdapter(adapter);
     }
 
     @Override
